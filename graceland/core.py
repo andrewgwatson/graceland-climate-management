@@ -4,11 +4,11 @@
 """
     /|
  .-((--.
-( '`^'; )
-`;#    |
- \#    |    Graceland Chili House
-  \#   \    Climate Management System            
-   '-.  )   AndrewGWatson
+( '`^'; )   Graceland Chili House
+`;#    |    Micro Controller Climate Management System
+ \#    |    https://github.com/andrewgwatson/graceland-climate-management
+  \#   \             
+   '-.  )   
       \(
        `
 """ 
