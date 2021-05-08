@@ -4,7 +4,7 @@
 """
     /|
  .-((--.
-( '`^'; )   Graceland Chili House
+( '`^'; )   Graceland Chilis
 `;#    |    Micro Controller Climate Management System
  \#    |    https://github.com/andrewgwatson/graceland-climate-management
   \#   \             
@@ -12,32 +12,29 @@
       \(
        `
 """ 
- 
-# Here comes your imports 
-# Here comes your (few) global variables 
+
+import config
+import climate
+
+# Here comes your (few) global variables
+
 # Here comes your class definitions 
 
-class Climate:
+class ClimateX:
     
     def air_temperature(self):
         return '33.23453869203°'
     
-    def light_level(self):
-        return '1.23 lux'
-
-    def soil_temperature(self, sensor):
-        return 'soiltemp'+str(sensor)
-
-# Here comes your function definitions 
+    
  
 def main(): 
-    c = Climate()
-    print(c.air_temperature())
+    c = climate
+    print(c.current_air_temperature())
     print(c.light_level())
     print(c.soil_temperature(1))
     print(c.soil_temperature(2))
     print(c.soil_temperature(3))
-
+    print(settings.controllers)
 
  
  
