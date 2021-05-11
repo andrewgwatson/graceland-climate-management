@@ -1,14 +1,10 @@
-###########################################################################
-     /|
-  .-((--.
- ( '`^'; )    Graceland Chili House
-  `;#    |    Micro Controller Climate Management System
-   \#    |    https://github.com/andrewgwatson/graceland-climate-management
-    \#   \             
-     '-.  )   
-        \(
-         `
-###########################################################################
+#############################################################
+
+ Graceland Chilis
+ Climate Monitoring & Management System
+ https://github.com/andrewgwatson/graceland-climate-management
+
+#############################################################
 
 # Graceland Climate Management
 

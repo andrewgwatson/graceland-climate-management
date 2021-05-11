@@ -5,7 +5,7 @@
     /|
  .-((--.
 ( '`^'; )   Graceland Chilis
-`;#    |    Micro Controller Climate Management System
+`;#    |    Climate Monitoring & Management System
  \#    |    https://github.com/andrewgwatson/graceland-climate-management
   \#   \             
    '-.  )   
@@ -13,28 +13,19 @@
        `
 """ 
 
-import config
+import logging, config
 import climate
 
-# Here comes your (few) global variables
+def main():
+    logging.basicConfig(filename='graceland.log', encoding='utf-8', level=logging.DEBUG, format='%(asctime)s.%(msecs)03d %(levelname)-2s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
-# Here comes your class definitions 
-
-class ClimateX:
-    
-    def air_temperature(self):
-        return '33.23453869203°'
-    
-    
- 
-def main(): 
     c = climate
-    print(c.current_air_temperature())
-    print(c.light_level())
-    print(c.soil_temperature(1))
-    print(c.soil_temperature(2))
-    print(c.soil_temperature(3))
-    print(settings.controllers)
+    logging.info("""Core Execution Started""")
+    c.current_air_temperature()
+    c.current_humidity()
+    c.current_air_pressure()
+    c.current_light_level()
+    print(config.units["temp"])
 
  
  
