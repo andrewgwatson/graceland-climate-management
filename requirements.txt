@@ -1,0 +1,8 @@
+# PIP
+enviroplus
+
+# APT
+#python-numpy
+#python-smbus
+#python-pil
+#python-setuptools

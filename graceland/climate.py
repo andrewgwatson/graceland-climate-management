@@ -17,6 +17,11 @@ except ImportError:
     from stubs import bme280_STUB
     BME280 = bme280_STUB
  
+try:
+    import GROW
+except ImportError:
+    from stubs import grow_STUB
+    GROW = grow_STUB
  
 
 def current_air_temperature():
@@ -40,8 +45,10 @@ def current_light_level():
         return l
 #       prox = ltr559.get_proximity()
         
-def current_soil_temperature(sensor):
-        return 'soiltemp'+str(sensor) 
+def current_soil_moisture(sensor):
+        m = GROW.moisture()
+        logging.info("""Soil Moisture on sensor {:} : {:} {:}""".format(sensor, m, config.units['moisture']))
+        return m
 
 #logging.info("""Light: {:05.02f} Lux""".format(current_light_level()))
 

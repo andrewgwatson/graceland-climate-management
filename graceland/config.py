@@ -13,4 +13,5 @@ units = {
     "humidity" : "%",
     "airpressure" : "hPa",
     "light" : "lux",
+    "moisture" : "moistness!",
 }
