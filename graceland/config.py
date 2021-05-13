@@ -1,3 +1,10 @@
+db = {
+    "filename" : "timeseriesdata.csv",
+    "humidity" : "%",
+    "airpressure" : "hPa",
+    "light" : "lux",
+    "moisture" : "moistness!",
+}
 microcontrollers = [
     dict(
         name = 'Pi1',
@@ -7,7 +14,7 @@ microcontrollers = [
         name = 'Pi2',
         ip = '192.168.0.301',
     )
-],
+]
 units = {
     "temp" : "°C",
     "humidity" : "%",

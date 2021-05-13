@@ -47,7 +47,7 @@ def current_light_level():
         
 def current_soil_moisture(sensor):
         m = GROW.moisture()
-        logging.info("""Soil Moisture on sensor {:} : {:} {:}""".format(sensor, m, config.units['moisture']))
+        logging.info("""Soil Moisture on sensor {:} : {:06.03f} {:}""".format(sensor, m, config.units['moisture']))
         return m
 
 #logging.info("""Light: {:05.02f} Lux""".format(current_light_level()))
